@@ -71,8 +71,9 @@ I have implemented an **Interactive Inference UI** within the project notebook, 
 * **Refined Attention Focus:** Unlike traditional Grad-CAM, this tool visualizes the model's decision-making by highlighting the **forensic margins** and **abrasion collars** using contrast-enhanced attention maps.
 
 ### Interactive UI Example
-![Interactive Analysis](results/vit_small_entrance.jpg)
-![Interactive Analysis](results/swin_tiny_exit.png.jpg)
+![Interactive Analysis](results/vit_small_entrance.png)
+
+![Interactive Analysis](results/swin_tiny_exit.png)
 
 > **Reference:** *“Artificial intelligence for human gunshot wound classification”*, **Journal of Pathology Informatics (2024)**. This project enhances those methodologies with modern SOTA architectures and forensic-centric cropping.
 > 
