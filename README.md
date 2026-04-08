@@ -54,11 +54,11 @@ Instead of traditional Grad-CAM, we utilized **Self-Attention Mapping** to visua
 
 #### 1. ViT-Small Attention Analysis
 *Exhibits a global strategy, focusing on the transition between normal skin and the wound margin.*
-![ViT Attention](results/vit_dual_attention.png)
+![ViT Attention](results/vit_small_dual_attention.png)
 
 #### 2. Swin-Tiny Attention Analysis
 *Demonstrates hierarchical focus, capturing the integrity of the perilesional area with high sensitivity.*
-![Swin Attention](results/swin_dual_attention.png)
+![Swin Attention](results/swin_tiny_dual_attention.png)
 
 ---
 
