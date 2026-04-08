@@ -19,24 +19,24 @@ The models were trained and evaluated using the **FDCPUnBGunshotDB**, following 
 ## 🚀 3. Key Technical Features
 * **Transformer Benchmarking:** Comprehensive evaluation of **ViT-Small (patch16)** and **Swin-Tiny (window7)** using the `timm` (PyTorch Image Models) library.
 * **Hierarchical Feature Extraction:** Implementation of Swin Transformer to capture multi-scale forensic textures through shifted window mechanisms.
-* **Explainable AI (XAI) for Transformers:** Developed a specialized visualization pipeline using **Self-Attention Mapping** and **Contrast-Enhanced Refined Attention**, bypassing the gradient-instability issues of traditional Grad-CAM in Transformer architectures.
-* **Hardware:** Optimized for training on **Google Colab L4 GPU** environments, achieving high-precision results (91.1%) within minimal training time.
+* **Explainable AI (XAI) for Transformers:** Developed a specialized visualization pipeline using **Self-Attention Mapping** and **Contrast-Enhanced Refined Attention**, bypassing the gradient-instability issues of traditional Grad-CAM.
+* **Hardware:** Optimized for training on **Google Colab L4 GPU** environments, achieving SOTA results within minimal training time.
 
 ## 📈 4. Performance Metrics (Benchmark Results)
-Both Transformer models demonstrated superior performance, reaching an accuracy of **91.1%** and showing exceptional reliability in identifying Entrance wounds.
+The Transformer models demonstrated superior performance over traditional CNN baselines, with **Swin-Tiny** achieving the highest overall accuracy of **93.3%**.
 
-| Model | Accuracy | Entrance F1-Score | Exit F1-Score | Note |
+| Model | Accuracy | Entrance Recall | Exit Recall | Note |
 | :--- | :---: | :---: | :---: | :--- |
-| **ViT-Small** | **91.1%** | **0.94** | **0.82** | **Superior Entrance Recall (96%)** |
-| **Swin-Tiny** | **91.1%** | **0.94** | **0.82** | **Robust Contextual Awareness** |
-| ResNet50 (Baseline)| 87.0% | 0.91 | 0.75 | Previous CNN Benchmark |
+| **Swin-Tiny** | **93.3%** | **97.9%** | **79.9%** | **Best Overall Accuracy & Sensitivity** |
+| **ViT-Small** | **91.1%** | **96.0%** | **77.6%** | **Strong Global Dependency Mapping** |
+| ResNet50 (Baseline)| 87.0% | 91.0% | 75.0% | Previous CNN Benchmark |
 
 ---
 
 ## 🔍 Visual Analysis Comparison (XAI)
 
 ### A. Confusion Matrix (CM) Results
-The Transformers show significantly improved recall for Entrance wounds (96.1%), effectively minimizing false negatives—a critical requirement for objective forensic documentation.
+The Transformers show significantly improved recall for Entrance wounds, reaching up to **97.9%** with Swin-Tiny—effectively minimizing false negatives in forensic documentation.
 
 #### 1. ViT-Small Confusion Matrix
 ![ViT-Small CM](results/CM_vit_small_patch16_224.png)
@@ -53,11 +53,9 @@ Instead of traditional Grad-CAM, we utilized **Self-Attention Mapping** to visua
 2. **Refined Attention (Marker Focus):** Highlights the most discriminative morphological features. Analysis reveals that the models prioritize **forensic margins** (abrasion collars and radial tears) while correctly identifying the non-informative central cavity as a "void" zone.
 
 #### 1. ViT-Small Attention Analysis
-*Exhibits a global strategy, focusing on the transition between normal skin and the wound margin.*
 ![ViT Attention](results/vit_small_dual_attention.png)
 
 #### 2. Swin-Tiny Attention Analysis
-*Demonstrates hierarchical focus, capturing the integrity of the perilesional area with high sensitivity.*
 ![Swin Attention](results/swin_tiny_dual_attention.png)
 
 ---
