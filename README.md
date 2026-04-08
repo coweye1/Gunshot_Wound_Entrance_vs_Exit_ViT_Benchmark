@@ -27,8 +27,8 @@ The Transformer models demonstrated superior performance over traditional CNN ba
 
 | Model | Accuracy | Entrance Recall | Exit Recall | Note |
 | :--- | :---: | :---: | :---: | :--- |
-| **Swin-Tiny** | **93.3%** | **97.9%** | **79.9%** | **Best Overall Accuracy & Sensitivity** |
 | **ViT-Small** | **91.1%** | **96.0%** | **77.6%** | **Strong Global Dependency Mapping** |
+| **Swin-Tiny** | **93.3%** | **97.9%** | **79.9%** | **Best Overall Accuracy & Sensitivity** |
 | ResNet50 (Baseline)| 87.0% | 91.0% | 75.0% | Previous CNN Benchmark |
 
 ---
