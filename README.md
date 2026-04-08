@@ -27,4 +27,44 @@ Both Transformer models demonstrated superior performance, reaching an accuracy 
 
 | Model | Accuracy | Entrance F1-Score | Exit F1-Score | Note |
 | :--- | :---: | :---: | :---: | :--- |
-| **ViT-Small** | **91.1%** | **0.94** | **0.82** | **Superior Entrance Recall (9
+| **ViT-Small** | **91.1%** | **0.94** | **0.82** | **Superior Entrance Recall (96%)** |
+| **Swin-Tiny** | **91.1%** | **0.94** | **0.82** | **Robust Contextual Awareness** |
+| ResNet50 (Baseline)| 87.0% | 0.91 | 0.75 | Previous CNN Benchmark |
+
+---
+
+## 🔍 Visual Analysis Comparison
+
+### A. Confusion Matrix (CM) Results
+The Transformers show significantly improved recall for Entrance wounds (96.1%), effectively minimizing false negatives in forensic documentation.
+
+#### 1. ViT-Small Confusion Matrix
+![ViT-Small CM](results/CM_vit_small_patch16_224.png)
+
+#### 2. Swin-Tiny Confusion Matrix
+![Swin-Tiny CM](results/CM_swin_tiny_patch4_window7_224.png)
+
+---
+
+### B. Model Interpretability (Grad-CAM)
+We verified the models' focus using specialized Grad-CAM for Transformers. The attention is concentrated on the **wound margins** and **abrasion collars**, mimicking the diagnostic logic of forensic pathologists.
+
+#### 1. ViT-Small Focus Analysis
+![ViT GradCAM](results/vit_small_Grad_CAM.png)
+
+#### 2. Swin-Tiny Focus Analysis
+![Swin GradCAM](results/swin_tiny_Grad_CAM.png)
+
+---
+
+## 📝 Research Collaboration
+This project is part of an ongoing research collaboration with **Dr. Lorenzo Gitto**, a Forensic Pathologist at the Cook County Medical Examiner's Office. This benchmarking provides empirical evidence for the use of Transformer-based architectures as objective decision-support tools in forensic science.
+
+---
+
+## 🧑‍⚕️ About the Author
+**Hee Jae Ryu (HEE JAE RYU), MD**
+* **Pathology Residency Applicant (2026 Match)**
+* **MD, Chungbuk National University College of Medicine**
+* **Content Creator at 'CowEye' (1.68M+ Subscribers)**
+* **Primary Interests:** Digital Pathology, Forensic Science, and AI-driven Diagnostics
