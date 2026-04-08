@@ -20,7 +20,7 @@ The models were trained and evaluated using the **FDCPUnBGunshotDB**, following 
 * **Transformer Benchmarking:** Comprehensive evaluation of **ViT-Small (patch16)** and **Swin-Tiny (window7)** using the `timm` (PyTorch Image Models) library.
 * **Hierarchical Feature Extraction:** Implementation of Swin Transformer to capture multi-scale forensic textures through shifted window mechanisms.
 * **Explainable AI (XAI) for Transformers:** Developed a specialized visualization pipeline using **Self-Attention Mapping** and **Contrast-Enhanced Refined Attention**, bypassing the gradient-instability issues of traditional Grad-CAM.
-* **Hardware:** Optimized for training on **Google Colab L4 GPU** environments, achieving SOTA results within minimal training time.
+* **Hardware:** Optimized for training on **Google Colab T4 GPU** environments, achieving SOTA results within minimal training time.
 
 ## 📈 4. Performance Metrics (Benchmark Results)
 The Transformer models demonstrated superior performance over traditional CNN baselines, with **Swin-Tiny** achieving the highest overall accuracy of **93.3%**.
