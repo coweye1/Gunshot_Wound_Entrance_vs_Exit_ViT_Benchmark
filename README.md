@@ -60,9 +60,22 @@ Instead of traditional Grad-CAM, we utilized **Self-Attention Mapping** to visua
 
 ---
 
-## 📝 Research Collaboration
-This project is part of an ongoing research collaboration with **Dr. Lorenzo Gitto**, a Forensic Pathologist at the Cook County Medical Examiner's Office. This benchmarking provides empirical evidence for the use of Transformer-based architectures as objective decision-support tools in forensic science.
+---
 
+## 🔍 Interactive Forensic Inference Tool
+I have implemented an **Interactive Inference UI** within the project notebook, enabling real-time diagnostic support. This tool allows forensic pathologists to upload gunshot wound images and receive instant classification results along with **Transformer-specific Attention Mapping**.
+
+### 🛠️ Features of the Analyzer:
+* **Model Selection:** Toggle between **ViT-Small** (Global Contextual Analysis) and **Swin-Tiny** (Hierarchical Feature Extraction).
+* **Confidence Scoring:** Provides a probabilistic reliability score for each classification (Entrance vs. Exit).
+* **Refined Attention Focus:** Unlike traditional Grad-CAM, this tool visualizes the model's decision-making by highlighting the **forensic margins** and **abrasion collars** using contrast-enhanced attention maps.
+
+### Interactive UI Example
+![Interactive Analysis](results/vit_small_entrance.jpg)
+![Interactive Analysis](results/swin_tiny_exit.png.jpg)
+
+> **Reference:** *“Artificial intelligence for human gunshot wound classification”*, **Journal of Pathology Informatics (2024)**. This project enhances those methodologies with modern SOTA architectures and forensic-centric cropping.
+> 
 ---
 
 ## 🧑‍⚕️ About the Author
